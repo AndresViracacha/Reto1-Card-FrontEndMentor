@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*---------------------------------INICIAL---------------------------------*/
+
+:root {
+  --dark-blue: hsl(233, 47%, 7%);
+  --dark-m-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --main-white: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+  --bodycopyfs: 15px;
+  --inter: "Inter", sans-serif;
+  --lexend: "Lexend Deca", sans-serif;
+}
+
+/*colors - tipography*/
+body {
+  background-color: var(--dark-blue);
+}
+
+.info {
+  background-color: var(--dark-m-blue);
+}
+.accent {
+  color: var(--soft-violet);
+}
+
+.whiteInter {
+  font-family: var(--inter);
+  font-weight: 700;
+  color: var(--white);
+}
+.paragraph {
+  font-size: var(--bodycopyfs);
+  color: var(--main-white);
+  font-family: var(--inter);
+  font-weight: 400;
+}
+
+.whiteLexend {
+  color: var(--stat-heading);
+  font-family: var(--lexend);
+  text-transform: uppercase;
+}
+
+/*ubication*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.content {
+  display: flex;
+  max-width: 1110px;
+  margin: 40px;
+}
+.info {
+  border-radius: 10px 0px 0px 10px;
+  width: 100%;
+}
+
+.textContainer {
+  margin: 76px 110px 76px 76px;
+  max-width: 390px;
+}
+.info h1 {
+  font-size: 35px;
+}
+.paragraph {
+  margin-top: 76px;
+  font-size: 15px;
+  max-width: 95%;
+}
+.stats {
+  margin-top: 76px;
+  display: flex;
+}
+.stat {
+  margin-right: 65px;
+}
+.image {
+  width: 100%;
+  position: relative;
+}
+.tarjeta {
+  background-color: hsla(277, 100%, 28%, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0px 10px 10px 0px;
+}
+img {
+  border-radius: 0px 10px 10px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-flow: column-reverse;
+  }
+  section {
+    margin: 100px 0;
+  }
+}
